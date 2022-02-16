@@ -1,4 +1,4 @@
-package sample;
+package sample.ej1;
 
 import java.net.MalformedURLException;
 import java.net.URL;

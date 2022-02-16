@@ -1,4 +1,4 @@
-package sample;
+package sample.ej3;
 
 import java.io.*;
 import java.net.*;

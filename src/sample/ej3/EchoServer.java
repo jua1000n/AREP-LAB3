@@ -1,4 +1,4 @@
-package sample;
+package sample.ej3;
 
 import java.net.*;
 import java.io.*;
@@ -24,7 +24,12 @@ public class EchoServer {
         String inputLine, outputLine;
         while ((inputLine = in.readLine()) != null) {
             System.out.println("Mensaje: " + inputLine);
-            outputLine = "Respuesta: " + inputLine ;
+            try{
+                int f = Integer.parseInt(inputLine)* Integer.parseInt(inputLine);
+                outputLine = "Respuesta: " + f ;
+            } catch( NumberFormatException e){
+                outputLine = "Respuesta: " + inputLine ;
+            }
             out.println(outputLine);
             if (outputLine.equals("Respuesta: Bye."))
                 break;
